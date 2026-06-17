@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -7,29 +8,47 @@ export default function Home() {
 
       <main className="bg-[#F8F4EE] text-[#111111]">
         {/* HERO */}
-        <section className="min-h-screen flex flex-col items-center justify-center text-center px-6">
-          <p className="uppercase tracking-[0.3em] text-sm mb-4 text-[#C6A86B]">
-            Beauty • Wellness • Education
-          </p>
+        <section className="min-h-[90vh] flex items-center px-6 py-20">
+          <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
+            {/* LEFT CONTENT */}
+            <div>
+              <p className="uppercase tracking-[0.3em] text-sm mb-4 text-[#C6A86B]">
+                Beauty • Wellness • Education
+              </p>
 
-          <h1 className="text-5xl md:text-7xl font-light mb-6">
-            Essence Beauty & Wellness
-          </h1>
+              <h1 className="text-5xl lg:text-7xl leading-tight mb-6">
+                Essence Beauty
+                <br />& Wellness
+              </h1>
 
-          <p className="max-w-3xl text-lg md:text-2xl text-gray-700 mb-10">
-            Enhancing confidence through luxury beauty services, advanced body
-            contouring treatments, and professional training opportunities in
-            Lufkin, Texas.
-          </p>
+              <p className="text-lg lg:text-xl text-gray-700 mb-10 max-w-xl">
+                Enhancing confidence through luxury beauty services, advanced
+                body contouring treatments, and professional training
+                opportunities in Lufkin, Texas.
+              </p>
 
-          <div className="flex flex-wrap gap-4 justify-center">
-            <button className="px-8 py-4 bg-black text-white rounded-full hover:opacity-90 transition">
-              Book Appointment
-            </button>
+              <div className="flex flex-wrap gap-4">
+                <button className="px-8 py-4 bg-black text-white rounded-full hover:opacity-90 transition">
+                  Book Appointment
+                </button>
 
-            <button className="px-8 py-4 border border-black rounded-full hover:bg-black hover:text-white transition">
-              Explore Services
-            </button>
+                <button className="px-8 py-4 border border-black rounded-full hover:bg-black hover:text-white transition">
+                  Explore Services
+                </button>
+              </div>
+            </div>
+
+            {/* RIGHT IMAGE */}
+            <div className="relative">
+              <Image
+                src="/hero-v2.png"
+                alt="Essence Beauty and Wellness"
+                width={1200}
+                height={1200}
+                priority
+                className="rounded-[40px] shadow-2xl"
+              />
+            </div>
           </div>
         </section>
 
@@ -75,17 +94,45 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ABOUT */}
+        {/* MEET CHRISTINA */}
         <section id="about" className="py-24 px-6 bg-white">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl mb-8">About Essence Beauty & Wellness</h2>
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <img
+                src="/christina-about.png"
+                alt="Christina Whiteley"
+                className="rounded-[40px] shadow-xl w-full"
+              />
+            </div>
 
-            <p className="text-lg leading-8 text-gray-700">
-              Founded with a passion for helping others look and feel their
-              best, Essence Beauty & Wellness combines luxury beauty services,
-              advanced wellness treatments, and professional education under one
-              brand.
-            </p>
+            <div>
+              <p className="uppercase tracking-[0.3em] text-sm mb-4 text-[#C6A86B]">
+                Meet The Founder
+              </p>
+
+              <h2 className="text-5xl mb-8">Christina Whiteley</h2>
+
+              <p className="text-lg text-gray-700 mb-6 leading-8">
+                What began as a passion for helping women feel confident through
+                beauty services has grown into Essence Beauty & Wellness — a
+                destination for beauty, wellness, and professional education in
+                East Texas.
+              </p>
+
+              <p className="text-lg text-gray-700 mb-6 leading-8">
+                With over 19 years of customer-focused experience and more than
+                6 years as a successful beauty business owner, Christina has
+                built a reputation for exceptional client care, personalized
+                services, and hands-on training.
+              </p>
+
+              <p className="text-lg text-gray-700 leading-8">
+                Today, Essence Beauty & Wellness offers luxury lash services,
+                airbrush tanning, advanced Zerona body contouring treatments,
+                and professional training programs designed to help clients
+                look, feel, and live with confidence.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -132,7 +179,7 @@ export default function Home() {
 
           <p className="mt-4 text-gray-600">Call or Text: (512) 765-5214</p>
 
-          <p className="text-gray-600">lufkinbodycontouring@gmail.com</p>
+          <p className="text-gray-600">essencebeautyandwellness@gmail.com</p>
         </section>
 
         {/* CTA */}
