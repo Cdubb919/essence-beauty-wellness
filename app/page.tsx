@@ -1,11 +1,9 @@
-import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-
       <main className="bg-[#F8F4EE] text-[#111111]">
         {/* HERO */}
         <section className="min-h-[90vh] flex items-center px-6 py-20">
@@ -28,13 +26,21 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 bg-black text-white rounded-full hover:opacity-90 transition">
+                <a
+                  href="https://book.squareup.com/appointments/bc52e454-dae1-4f17-9202-978a3354bf21/location/V38TF6VCY7BP3/services?buttonTextColor=ffffff&color=000000&locale=en&referrer=so"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-black text-white rounded-full hover:opacity-90 transition inline-block"
+                >
                   Book Appointment
-                </button>
+                </a>
 
-                <button className="px-8 py-4 border border-black rounded-full hover:bg-black hover:text-white transition">
+                <a
+                  href="#services"
+                  className="px-8 py-4 border border-black rounded-full hover:bg-black hover:text-white transition inline-block"
+                >
                   Explore Services
-                </button>
+                </a>
               </div>
             </div>
 
@@ -51,7 +57,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* SERVICES */}
         <section id="services" className="py-24 px-6">
           <div className="max-w-7xl mx-auto">
@@ -60,40 +65,61 @@ export default function Home() {
             <p className="text-center text-gray-600 mb-16">
               Beauty, wellness, and education all under one roof.
             </p>
-
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-white p-8 rounded-3xl shadow-sm">
-                <h3 className="text-2xl mb-4">Lash Extensions</h3>
-                <p className="text-gray-600">
-                  Customized lash artistry designed to enhance your natural
-                  beauty.
-                </p>
-              </div>
+              <a
+                href="https://lashessence.square.site/lash-services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition cursor-pointer h-full">
+                  <h3 className="text-2xl mb-4">Lash Extensions</h3>
+                  <p className="text-gray-600">
+                    Customized lash artistry designed to enhance your natural
+                    beauty.
+                  </p>
+                </div>
+              </a>
 
-              <div className="bg-white p-8 rounded-3xl shadow-sm">
-                <h3 className="text-2xl mb-4">Lash Lift & Tint</h3>
-                <p className="text-gray-600">
-                  A low-maintenance way to achieve darker, lifted lashes.
-                </p>
-              </div>
+              <a
+                href="https://lashessence.square.site/lash-services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition cursor-pointer h-full">
+                  <h3 className="text-2xl mb-4">Lash Lift & Tint</h3>
+                  <p className="text-gray-600">
+                    A low-maintenance way to achieve darker, lifted lashes.
+                  </p>
+                </div>
+              </a>
 
-              <div className="bg-white p-8 rounded-3xl shadow-sm">
-                <h3 className="text-2xl mb-4">Airbrush Tanning</h3>
-                <p className="text-gray-600">
-                  Beautiful, natural-looking color without UV exposure.
-                </p>
-              </div>
+              <a
+                href="https://lashessence.square.site/airbrush-tanning"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition cursor-pointer h-full">
+                  <h3 className="text-2xl mb-4">Airbrush Tanning</h3>
+                  <p className="text-gray-600">
+                    Beautiful, natural-looking color without UV exposure.
+                  </p>
+                </div>
+              </a>
 
-              <div className="bg-white p-8 rounded-3xl shadow-sm">
-                <h3 className="text-2xl mb-4">Body Contouring</h3>
-                <p className="text-gray-600">
-                  Non-invasive Zerona treatments with no downtime.
-                </p>
-              </div>
+              <Link href="/body-contouring">
+                <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition cursor-pointer h-full">
+                  <h3 className="text-2xl mb-4">Body Contouring</h3>
+                  <p className="text-gray-600">
+                    Non-invasive Zerona treatments with no downtime.
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         </section>
-
         {/* MEET CHRISTINA */}
         <section id="about" className="py-24 px-6 bg-white">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
@@ -135,6 +161,65 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* WHY CHOOSE US */}
+        <section className="py-24 px-6 bg-[#F8F4EE]">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <p className="uppercase tracking-[0.3em] text-sm mb-4 text-[#C6A86B]">
+                Why Choose Us
+              </p>
+
+              <h2 className="text-5xl mb-6">Beauty, Wellness & Education</h2>
+
+              <p className="max-w-3xl mx-auto text-lg text-gray-700">
+                More than a beauty studio — we're committed to helping you look,
+                feel, and live with confidence through personalized services,
+                advanced technology, and professional education.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="bg-white p-8 rounded-3xl shadow-sm text-center">
+                <h3 className="text-4xl mb-4">6+</h3>
+                <p className="font-medium mb-2">Years in Business</p>
+                <p className="text-gray-600">
+                  Now proudly serving East Texas with trusted beauty and
+                  wellness services.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-3xl shadow-sm text-center">
+                <h3 className="text-4xl mb-4">10+</h3>
+                <p className="font-medium mb-2">
+                  Years Beauty Industry Experience
+                </p>
+                <p className="text-gray-600">
+                  Over a decade of hands-on experience helping clients look and
+                  feel their best.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-3xl shadow-sm text-center">
+                <h3 className="text-4xl mb-4">1000s</h3>
+                <p className="font-medium mb-2">Client Appointments</p>
+                <p className="text-gray-600">
+                  Thousands of beauty, tanning, and wellness appointments
+                  successfully completed.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-3xl shadow-sm text-center">
+                <h3 className="text-4xl mb-4">🎓</h3>
+                <p className="font-medium mb-2">
+                  Professional Training Programs
+                </p>
+                <p className="text-gray-600">
+                  Hands-on education designed to help aspiring beauty
+                  professionals succeed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* TRAINING */}
         <section id="training" className="py-24 px-6">
@@ -164,7 +249,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* CONTACT */}
         <section id="contact" className="py-24 px-6 bg-white text-center">
           <h2 className="text-4xl mb-6">Contact Us</h2>
@@ -181,7 +265,6 @@ export default function Home() {
 
           <p className="text-gray-600">essencebeautyandwellness@gmail.com</p>
         </section>
-
         {/* CTA */}
         <section className="py-24 px-6 bg-black text-white text-center">
           <h2 className="text-4xl mb-6">Ready to Invest in Yourself?</h2>
@@ -191,9 +274,14 @@ export default function Home() {
             Essence Beauty & Wellness experience.
           </p>
 
-          <button className="px-8 py-4 bg-white text-black rounded-full">
+          <a
+            href="https://book.squareup.com/appointments/bc52e454-dae1-4f17-9202-978a3354bf21/location/V38TF6VCY7BP3/services?buttonTextColor=ffffff&color=000000&locale=en&referrer=so"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-white text-black rounded-full inline-block"
+          >
             Book Now
-          </button>
+          </a>
         </section>
       </main>
     </>
