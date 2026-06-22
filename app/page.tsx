@@ -25,12 +25,12 @@ export default function Home() {
                 opportunities in Lufkin, Texas.
               </p>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 mt-8">
                 <a
                   href="https://book.squareup.com/appointments/bc52e454-dae1-4f17-9202-978a3354bf21/location/V38TF6VCY7BP3/services?buttonTextColor=ffffff&color=000000&locale=en&referrer=so"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 bg-black text-white rounded-full hover:opacity-90 transition inline-block"
+                  className="px-8 py-4 bg-black text-white rounded-full hover:scale-105 transition"
                 >
                   Book Appointment
                 </a>
@@ -66,57 +66,122 @@ export default function Home() {
               Beauty, wellness, and education all under one roof.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* LASHES */}
               <a
                 href="https://lashessence.square.site/lash-services"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block"
+                className="group block"
               >
-                <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition cursor-pointer h-full">
-                  <h3 className="text-2xl mb-4">Lash Extensions</h3>
-                  <p className="text-gray-600">
-                    Customized lash artistry designed to enhance your natural
-                    beauty.
-                  </p>
+                <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
+                  <Image
+                    src="/hybrid-replacement.jpg"
+                    alt="Lash Extensions"
+                    width={600}
+                    height={400}
+                    className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+                  />
+
+                  <div className="p-8 flex flex-col h-full">
+                    <h3 className="text-2xl mb-4">Lash Extensions</h3>
+
+                    <p className="text-gray-600 min-h-[72px]">
+                      Customized lash artistry designed to enhance your natural
+                      beauty.
+                    </p>
+
+                    <span className="inline-block mt-6 mx-auto bg-[#C6A86B] text-black px-5 py-3 rounded-full font-medium group-hover:scale-105 transition duration-300">
+                      Book Now
+                    </span>
+                  </div>
                 </div>
               </a>
 
-              <a
-                href="https://lashessence.square.site/lash-services"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition cursor-pointer h-full">
-                  <h3 className="text-2xl mb-4">Lash Lift & Tint</h3>
-                  <p className="text-gray-600">
-                    A low-maintenance way to achieve darker, lifted lashes.
-                  </p>
-                </div>
-              </a>
-
+              {/* TANNING */}
               <a
                 href="https://lashessence.square.site/airbrush-tanning"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block"
+                className="group block"
               >
-                <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition cursor-pointer h-full">
-                  <h3 className="text-2xl mb-4">Airbrush Tanning</h3>
-                  <p className="text-gray-600">
-                    Beautiful, natural-looking color without UV exposure.
-                  </p>
+                <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
+                  <Image
+                    src="/airbrushtan1.jpg"
+                    alt="Airbrush Tanning"
+                    width={600}
+                    height={400}
+                    className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+                  />
+
+                  <div className="p-8 flex flex-col h-full">
+                    <h3 className="text-2xl mb-4">Airbrush Tanning</h3>
+
+                    <p className="text-gray-600 min-h-[72px]">
+                      Beautiful, natural-looking color without UV exposure.
+                    </p>
+
+                    <span className="inline-block mt-6 mx-auto bg-[#C6A86B] text-black px-5 py-3 rounded-full font-medium group-hover:scale-105 transition duration-300">
+                      Book Now
+                    </span>
+                  </div>
                 </div>
               </a>
 
-              <Link href="/body-contouring">
-                <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition cursor-pointer h-full">
-                  <h3 className="text-2xl mb-4">Body Contouring</h3>
-                  <p className="text-gray-600">
-                    Non-invasive Zerona treatments with no downtime.
-                  </p>
+              {/* BODY CONTOURING */}
+              <Link href="/body-contouring" className="group block">
+                <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
+                  <Image
+                    src="/laser.webp"
+                    alt="Body Contouring"
+                    width={600}
+                    height={400}
+                    className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+                  />
+
+                  <div className="p-8 flex flex-col h-full">
+                    <h3 className="text-2xl mb-4">Body Contouring</h3>
+
+                    <p className="text-gray-600 min-h-[72px]">
+                      Non-invasive Zerona treatments with no downtime.
+                    </p>
+
+                    <span className="inline-block mt-6 mx-auto bg-[#C6A86B] text-black px-5 py-3 rounded-full font-medium group-hover:scale-105 transition duration-300">
+                      Learn More
+                    </span>
+                  </div>
                 </div>
               </Link>
+
+              {/* TRAINING */}
+              <a
+                href="https://lashessence.square.site/classestraining"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
+                <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
+                  <Image
+                    src="/sitetraining.jpcg"
+                    alt="Training Academy"
+                    width={600}
+                    height={400}
+                    className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+                  />
+
+                  <div className="p-8 flex flex-col h-full">
+                    <h3 className="text-2xl mb-4">Training</h3>
+
+                    <p className="text-gray-600 min-h-[72px]">
+                      Hands on beauty education designed to help launch your
+                      career.
+                    </p>
+
+                    <span className="inline-block mt-6 mx-auto bg-[#C6A86B] text-black px-5 py-3 rounded-full font-medium group-hover:scale-105 transition duration-300">
+                      Learn More
+                    </span>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </section>
@@ -137,6 +202,9 @@ export default function Home() {
               </p>
 
               <h2 className="text-5xl mb-8">Christina Whiteley</h2>
+              <p className="text-[#C6A86B] text-lg mb-8 tracking-wide">
+                Founder • Beauty Professional • Educator
+              </p>
 
               <p className="text-lg text-gray-700 mb-6 leading-8">
                 What began as a passion for helping women feel confident through
@@ -223,28 +291,106 @@ export default function Home() {
 
         {/* TRAINING */}
         <section id="training" className="py-24 px-6">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl mb-6">Training Academy</h2>
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <p className="uppercase tracking-[0.3em] text-sm mb-4 text-[#C6A86B]">
+                Training
+              </p>
 
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
-              Learn the skills, techniques, and business knowledge needed to
-              build a successful career in the beauty industry.
-            </p>
+              <h2 className="text-5xl mb-6">Professional Beauty Training</h2>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-8 rounded-3xl shadow-sm">
-                <h3 className="text-2xl mb-4">Lash Training</h3>
-                <p className="text-gray-600">
-                  Hands-on education designed for aspiring lash artists.
-                </p>
+              <p className="max-w-3xl mx-auto text-lg text-gray-700">
+                Learn hands-on techniques, client care, and business strategies
+                from an experienced beauty professional in a supportive,
+                real-world training environment.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-10">
+              {/* LASH TRAINING */}
+              <div className="group h-full">
+                <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                  <Image
+                    src="/lltraining.png"
+                    alt="Lash Lift Training"
+                    width={800}
+                    height={600}
+                    className="w-full h-80 object-cover group-hover:scale-105 transition duration-500"
+                  />
+
+                  <div className="p-8 flex flex-col h-[260px]">
+                    <h3 className="text-3xl mb-4">Lash Training</h3>
+
+                    <p className="text-gray-600 leading-7">
+                      Learn proper lash lift placement, product application,
+                      client consultation, safety protocols, and professional
+                      techniques through hands-on instruction.
+                    </p>
+
+                    <div className="flex justify-center gap-4 pt-8">
+                      <a
+                        href="https://lashessence.square.site/classestraining"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-black text-white px-5 py-3 rounded-full hover:opacity-90 transition"
+                      >
+                        Learn More
+                      </a>
+
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSe7R1mWK0_Ppog6WaVNrpznFy4Zwl6QUpNxzl3hzdWJiEERfQ/viewform?usp=preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-[#C6A86B] text-black px-5 py-3 rounded-full font-medium hover:scale-105 transition duration-300"
+                      >
+                        Enroll Here
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-white p-8 rounded-3xl shadow-sm">
-                <h3 className="text-2xl mb-4">Airbrush Tan Training</h3>
-                <p className="text-gray-600">
-                  Learn professional spray tanning techniques and business
-                  strategies.
-                </p>
+              {/* AIRBRUSH TRAINING */}
+              <div className="group h-full">
+                <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                  <Image
+                    src="/tantraining.png"
+                    alt="Airbrush Tan Training"
+                    width={800}
+                    height={600}
+                    className="w-full h-80 object-cover group-hover:scale-105 transition duration-500"
+                  />
+
+                  <div className="p-8 flex flex-col h-[260px]">
+                    <h3 className="text-3xl mb-4">Airbrush Tan Training</h3>
+
+                    <p className="text-gray-600 leading-7">
+                      Master spray tan techniques, body positioning, color
+                      selection, equipment setup, and business fundamentals
+                      through guided hands-on training.
+                    </p>
+
+                    <div className="flex justify-center gap-4 pt-8">
+                      <a
+                        href="https://lashessence.square.site/classestraining"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-black text-white px-5 py-3 rounded-full hover:opacity-90 transition"
+                      >
+                        Learn More
+                      </a>
+
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSe7R1mWK0_Ppog6WaVNrpznFy4Zwl6QUpNxzl3hzdWJiEERfQ/viewform?usp=preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-[#C6A86B] text-black px-5 py-3 rounded-full font-medium hover:scale-105 transition duration-300"
+                      >
+                        Enroll Here
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
