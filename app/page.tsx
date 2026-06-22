@@ -161,7 +161,7 @@ export default function Home() {
               >
                 <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full">
                   <Image
-                    src="/sitetraining.jpcg"
+                    src="/sitetraining.jpg"
                     alt="Training Academy"
                     width={600}
                     height={400}
