@@ -354,7 +354,7 @@ export default function Home() {
               <div className="group h-full">
                 <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
                   <Image
-                    src="/tantraining.png"
+                    src="/airbrushupdatedtrainingpic.png"
                     alt="Airbrush Tan Training"
                     width={800}
                     height={600}
@@ -411,6 +411,22 @@ export default function Home() {
 
           <p className="text-gray-600">essencebeautyandwellness@gmail.com</p>
         </section>
+
+        <p className="mt-8 mb-6 text-lg text-gray-700 text-center">
+          Conveniently located in the heart of Lufkin inside Essence Beauty &
+          Wellness.
+        </p>
+
+        <div className="mt-12 max-w-5xl mx-auto">
+          <iframe
+            src="https://maps.google.com/maps?q=3213%20S%20Medford%20Dr%20Suite%20305%20Lufkin%20TX%2075904&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="400"
+            style={{ border: 0, borderRadius: "24px" }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
         {/* CTA */}
         <section className="py-24 px-6 bg-black text-white text-center">
           <h2 className="text-4xl mb-6">Ready to Invest in Yourself?</h2>
