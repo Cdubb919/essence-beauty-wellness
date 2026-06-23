@@ -409,7 +409,7 @@ export default function Home() {
 
           <p className="mt-4 text-gray-600">Call or Text: (512) 765-5214</p>
 
-          <p className="text-gray-600">essencebeautyandwellness@gmail.com</p>
+          <p className="text-gray-600">essencebeautyandwellnessbrand@gmail.com</p>
         </section>
 
         <p className="mt-8 mb-6 text-lg text-gray-700 text-center">
