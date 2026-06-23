@@ -474,7 +474,7 @@ export default function BodyContouringPage() {
               <p className="mb-4 text-lg">📞 (512) 765-5214</p>
 
               <p className="mb-8 text-lg break-all">
-                ✉️ essencebeautyandwellness@gmail.com
+                ✉️ essencebeautyandwellnessbrand@gmail.com
               </p>
 
               <div className="flex flex-wrap gap-4">

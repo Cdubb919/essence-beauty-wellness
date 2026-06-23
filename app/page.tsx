@@ -25,7 +25,7 @@ export default function Home() {
                 opportunities in Lufkin, Texas.
               </p>
 
-              <div className="flex flex-wrap gap-4 mt-8">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
                 <a
                   href="https://book.squareup.com/appointments/bc52e454-dae1-4f17-9202-978a3354bf21/location/V38TF6VCY7BP3/services?buttonTextColor=ffffff&color=000000&locale=en&referrer=so"
                   target="_blank"
@@ -318,16 +318,16 @@ export default function Home() {
                     className="w-full h-80 object-cover group-hover:scale-105 transition duration-500"
                   />
 
-                  <div className="p-8 flex flex-col h-[260px]">
-                    <h3 className="text-3xl mb-4">Lash Training</h3>
+                  <div className="p-8 flex flex-col min-h-[300px]">
+                    <h3 className="text-3xl mb-4 text-center">Lash Training</h3>
 
-                    <p className="text-gray-600 leading-7">
+                    <p className="text-gray-600 leading-7 text-center">
                       Learn proper lash lift placement, product application,
                       client consultation, safety protocols, and professional
                       techniques through hands-on instruction.
                     </p>
 
-                    <div className="flex justify-center gap-4 pt-8">
+                    <div className="flex justify-center gap-4 mt-auto pt-8">
                       <a
                         href="https://lashessence.square.site/classestraining"
                         target="_blank"
@@ -361,16 +361,18 @@ export default function Home() {
                     className="w-full h-80 object-cover group-hover:scale-105 transition duration-500"
                   />
 
-                  <div className="p-8 flex flex-col h-[260px]">
-                    <h3 className="text-3xl mb-4">Airbrush Tan Training</h3>
+                  <div className="p-8 flex flex-col min-h-[300px]">
+                    <h3 className="text-3xl mb-4 text-center">
+                      Airbrush Tan Training
+                    </h3>
 
-                    <p className="text-gray-600 leading-7">
+                    <p className="text-gray-600 leading-7 text-center">
                       Master spray tan techniques, body positioning, color
                       selection, equipment setup, and business fundamentals
                       through guided hands-on training.
                     </p>
 
-                    <div className="flex justify-center gap-4 pt-8">
+                    <div className="flex justify-center gap-4 mt-auto pt-8">
                       <a
                         href="https://lashessence.square.site/classestraining"
                         target="_blank"
@@ -396,37 +398,45 @@ export default function Home() {
           </div>
         </section>
         {/* CONTACT */}
-        <section id="contact" className="py-24 px-6 bg-white text-center">
-          <h2 className="text-4xl mb-6">Contact Us</h2>
+        <section id="contact" className="py-24 px-6 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl mb-6">Visit Us</h2>
 
-          <p className="text-lg text-gray-700 mb-4">
-            Essence Beauty & Wellness
-          </p>
+              <p className="text-lg text-gray-700 mb-4">
+                Essence Beauty & Wellness
+              </p>
 
-          <p className="text-gray-600">3213 South Medford Drive, Suite 305</p>
+              <p className="text-gray-600">
+                3213 South Medford Drive, Suite 305
+              </p>
 
-          <p className="text-gray-600">Lufkin, Texas 75901</p>
+              <p className="text-gray-600 mb-4">Lufkin, Texas 75901</p>
 
-          <p className="mt-4 text-gray-600">Call or Text: (512) 765-5214</p>
+              <p className="text-gray-600">Call or Text: (512) 765-5214</p>
 
-          <p className="text-gray-600">essencebeautyandwellnessbrand@gmail.com</p>
+              <p className="text-gray-600 mb-8">
+                essencebeautyandwellnessbrand@gmail.com
+              </p>
+
+              <p className="max-w-2xl mx-auto text-lg text-gray-700">
+                Conveniently located in the heart of Lufkin inside Essence
+                Beauty & Wellness.
+              </p>
+            </div>
+
+            <div className="overflow-hidden rounded-[32px] shadow-xl">
+              <iframe
+                src="https://maps.google.com/maps?q=3213%20S%20Medford%20Dr%20Suite%20305%20Lufkin%20TX%2075901&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="500"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </div>
         </section>
-
-        <p className="mt-8 mb-6 text-lg text-gray-700 text-center">
-          Conveniently located in the heart of Lufkin inside Essence Beauty &
-          Wellness.
-        </p>
-
-        <div className="mt-12 max-w-5xl mx-auto">
-          <iframe
-            src="https://maps.google.com/maps?q=3213%20S%20Medford%20Dr%20Suite%20305%20Lufkin%20TX%2075904&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="400"
-            style={{ border: 0, borderRadius: "24px" }}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
         {/* CTA */}
         <section className="py-24 px-6 bg-black text-white text-center">
           <h2 className="text-4xl mb-6">Ready to Invest in Yourself?</h2>

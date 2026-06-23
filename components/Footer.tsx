@@ -56,7 +56,7 @@ Essence Beauty & Wellness </h3>
         <p className="text-gray-300 mb-3">(512) 765-5214</p>
 
         <p className="text-gray-300 mb-6 break-all">
-          essencebeautyandwellness@gmail.com
+          essencebeautyandwellnessbrand@gmail.com
         </p>
 
         <a
