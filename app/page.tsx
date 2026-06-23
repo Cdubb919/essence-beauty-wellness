@@ -68,7 +68,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* LASHES */}
               <a
-                href="https://lashessence.square.site/lash-services"
+                href="https://essencebeautyandwellness.square.site/lash-services"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block"
@@ -99,7 +99,7 @@ export default function Home() {
 
               {/* TANNING */}
               <a
-                href="https://lashessence.square.site/airbrush-tanning"
+                href="https://essencebeautyandwellness.square.site/airbrush-tanning"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block"
@@ -154,7 +154,7 @@ export default function Home() {
 
               {/* TRAINING */}
               <a
-                href="https://lashessence.square.site/classestraining"
+                href="https://essencebeautyandwellness.square.site/classestraining"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block"
@@ -329,10 +329,10 @@ export default function Home() {
 
                     <div className="flex justify-center gap-4 mt-auto pt-8">
                       <a
-                        href="https://lashessence.square.site/classestraining"
+                        href="https://essencebeautyandwellness.square.site/classestraining"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-black text-white px-5 py-3 rounded-full hover:opacity-90 transition"
+                        className="inline-block w-36 bg-black text-white px-5 py-3 rounded-full text-center hover:opacity-90 transition"
                       >
                         Learn More
                       </a>
@@ -341,7 +341,7 @@ export default function Home() {
                         href="https://docs.google.com/forms/d/e/1FAIpQLSe7R1mWK0_Ppog6WaVNrpznFy4Zwl6QUpNxzl3hzdWJiEERfQ/viewform?usp=preview"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-[#C6A86B] text-black px-5 py-3 rounded-full font-medium hover:scale-105 transition duration-300"
+                        className="inline-block w-36 bg-[#C6A86B] text-black px-5 py-3 rounded-full font-medium text-center hover:scale-105 transition duration-300"
                       >
                         Enroll Here
                       </a>
@@ -374,10 +374,10 @@ export default function Home() {
 
                     <div className="flex justify-center gap-4 mt-auto pt-8">
                       <a
-                        href="https://lashessence.square.site/classestraining"
+                        href="https://essencebeautyandwellness.square.site/classestraining"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-black text-white px-5 py-3 rounded-full hover:opacity-90 transition"
+                        className="inline-block w-36 bg-black text-white px-5 py-3 rounded-full text-center hover:opacity-90 transition"
                       >
                         Learn More
                       </a>
@@ -386,7 +386,7 @@ export default function Home() {
                         href="https://docs.google.com/forms/d/e/1FAIpQLSe7R1mWK0_Ppog6WaVNrpznFy4Zwl6QUpNxzl3hzdWJiEERfQ/viewform?usp=preview"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-[#C6A86B] text-black px-5 py-3 rounded-full font-medium hover:scale-105 transition duration-300"
+                        className="inline-block w-36 bg-[#C6A86B] text-black px-5 py-3 rounded-full font-medium text-center hover:scale-105 transition duration-300"
                       >
                         Enroll Here
                       </a>
